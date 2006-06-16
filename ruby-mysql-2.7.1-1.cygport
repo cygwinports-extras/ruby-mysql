@@ -1,0 +1,15 @@
+inherit ruby
+
+DESCRIPTION="Ruby bindings for MySQL client library"
+HOMEPAGE="http://www.tmtm.org/en/mysql/ruby/"
+ORIG_PN=mysql-ruby
+SRC_URI="http://tmtm.org/downloads/mysql/ruby/${ORIG_PN}-${PV}.tar.gz"
+
+DOCS="COPYING.ja"
+HTMLDOCS="README*.html"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	ruby_compile --with-mysql-config
+}

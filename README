@@ -1,0 +1,58 @@
+ruby-mysql
+------------------------------------------
+Ruby bindings for the MySQL client library.
+
+Runtime requirements:
+  cygwin-1.5.20-1
+  libmysqlclient15-5.0.22-1
+  ruby-1.8.4-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.20-1
+  binutils-20050610-1
+  cygport-0.2.2-1
+  gcc-core-3.4.4-1
+  make-3.80-1
+  ruby-1.8.4-1
+
+Canonical website:
+  http://www.tmtm.org/en/mysql/ruby/
+
+Canonical download:
+  http://tmtm.org/downloads/mysql/ruby/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ruby-mysql-2.7.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ruby-mysql-2.7.1-X.cygport all
+
+This will create:
+  /usr/src/ruby-mysql-2.7.1-X-src.tar.bz2
+  /usr/src/ruby-mysql-2.7.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ruby/site_ruby/1.8/i386-cygwin/mysql.so
+  /usr/share/doc/Cygwin/ruby-mysql-2.7.1.README
+  /usr/share/doc/ruby-mysql-2.7.1/COPYING
+  /usr/share/doc/ruby-mysql-2.7.1/COPYING.ja
+  /usr/share/doc/ruby-mysql-2.7.1/html/README.html
+  /usr/share/doc/ruby-mysql-2.7.1/html/README_ja.html
+
+------------------
+
+Port Notes:
+
+----- version 2.7.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
