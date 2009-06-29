@@ -1,4 +1,4 @@
 category: Database Ruby
-requires: cygwin ruby libmysqlclient15
+requires: ruby libmysqlclient15
 sdesc: "Ruby bindings for the MySQL client library"
 ldesc: "Ruby bindings for the MySQL client library"
